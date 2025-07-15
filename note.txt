@@ -1,0 +1,31 @@
+Features
+
+1. GET /track?page=/home
+
+2. GET /stats 
+
+3. GET /stats?page=/about
+
+4. GET /stats?date=2025-07-15
+
+
+
+mongodb schema
+
+_id: ObjectId,
+page: string,
+timestamp: ISODate
+date: string
+userAgent: string
+ip: string
+
+format 
+
+{
+  _id: ObjectId,
+  page: "/home",
+  timestamp: ISODate,        // new Date()
+  date: "2025-07-15",        // derived from timestamp
+  userAgent: "Mozilla/5.0",  // optional
+  ip: "127.0.0.1"            // optional
+}

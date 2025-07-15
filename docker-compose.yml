@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+    mongo:
+        container_name: analytics_tracker_db
+        image: mongo:latest
+        volumes:
+            - ./db:/data/db
+        ports:
+            - "27017:27017"
