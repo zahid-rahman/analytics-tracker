@@ -1,6 +1,6 @@
-# Analytics tracker API
+# Analytics Tracker API
 
-## An API that logs whenever a user "visits" a page or hits an endpoint — storing the path and timestamp to MongoDB.
+ An API that logs whenever a user "visits" a page or hits an endpoint — storing the path and timestamp to MongoDB.
 
 ### Endpoints:
 
@@ -14,17 +14,18 @@
 
 
 
-### mongodb schema
+### Mongodb schema
 
-_id: ObjectId,
-page: string,
-timestamp: ISODate
-date: string
-userAgent: string
-ip: string
+_id: ObjectId <br />
+page: string <br />
+timestamp: ISODate <br />
+date: string <br />
+userAgent: string <br />
+ip: string <br />
 
-### data format 
+### Data format 
 
+```
 {
   _id: ObjectId,
   page: "/home",
@@ -33,12 +34,13 @@ ip: string
   userAgent: "Mozilla/5.0",  // optional
   ip: "127.0.0.1"            // optional
 }
+```
 
-### must have installed
-- Docker, nodejs
+### Must have installed
+- `Docker`, `Nodejs`
 
-### installation process
+### Installation process
 
-- run `docker compose up -d` for running the mongodb database
-- run `npm install` to install all dependencies
-- run `npm start` to spin the server
+- Run `docker compose up -d` for running the mongodb database
+- Run `npm install` to install all dependencies
+- Run `npm start` to spin the server
